@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=MpfZ6x9dMZw&ab_channel=Webappfix
+https://www.youtube.com/watch?v=R4L0xJCqFxY&ab_channel=codingoblin
+https://spatie.be/docs/laravel-permission/v5/introduction
+https://jetstream.laravel.com/3.x/introduction.html
+
+composer require laravel/jetstream
+php artisan jetstream:install inertia
+
+npm install
+npm run build
+
+composer require spatie/laravel-permission
+
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+php artisan optimize:clear
+
+php artisan migrate
+
+php artisan serve
+
+php artisan make:seeder UserSeeder
+php artisan make:seeder RolesSeeder
+
+php artisan migrate:fresh --seed
